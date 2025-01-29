@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musée Virtuel - Oeuvres</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="museum">DW Musée</a></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Expositions</a></li>
+            <li><a href="oeuvres.html">Oeuvre</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Contactez-nous</h2>
+        <form class="contact-form">
+            <fieldset>
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </fieldset>
+
+            <h2>Geolocalisation</h2>
+            <iframe class="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9081734935166!2d2.3265614!3d48.859961399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2bb630941b%3A0xd071bd8cb14423d8!2sMus%C3%A9e%20d&#39;Orsay!5e0!3m2!1sfr!2skg!4v1738146690121!5m2!1sfr!2skg"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Musée Virtuel</p>
+    </footer>
+</body>
+
+</html>

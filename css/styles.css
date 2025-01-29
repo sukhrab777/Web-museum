@@ -1,0 +1,269 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header et Navigation */
+header {
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1,
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+nav,
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: lightgrey;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #6f6262;
+}
+
+main {
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  background-color: lightgray;
+}
+
+.expositions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  transition: all 0, 3s ease;
+  opacity: 1;
+}
+
+.art-card {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 1rem;
+  text-align: center;
+}
+
+.art-card:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  box-shadow: 0 4px 8px darkgray;
+}
+
+.art-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  filter: none;
+}
+
+.art-card:hover img {
+  transform: scale(1.1);
+  filter:
+    grayscale(10%) sepia(2%) blur(1px);
+}
+
+.art-card h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.art-card p {
+  color: #666;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: lightgray;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.exposition-card {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+  transition: all 0, 3s ease;
+  opacity: 1;
+}
+
+.exposition-card:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  box-shadow: 0 4px 8px darkgray;
+}
+
+.exposition-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  background-color: white;
+  padding: 0;
+  transition: transform 0.3s ease;
+  filter: none;
+}
+
+.exposition-card:hover img {
+  transform: scale(1.1);
+  filter:
+    grayscale(10%) sepia(2%) blur(1px);
+}
+
+.exposition-card .text-content {
+  text-align: left;
+}
+
+.oeuvres-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.oeuvres-table th,
+.oeuvres-table td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.oeuvres-table th {
+  background-color: #333;
+  color: white;
+}
+
+.oeuvres-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.oeuvres-table tr:hover {
+  background-color: #ddd;
+}
+
+#expositions,
+#oeuvres {
+  margin-bottom: 3rem;
+}
+
+#oeuvres h2 {
+  margin-top: 2rem;
+}
+
+.oeuvres-table tr {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.maps {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 4%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 30px;
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+legend {
+  padding: 0 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  .exposition-card {
+    flex-direction: column;
+  }
+
+  .exposition-card img {
+    width: 100%;
+    height: auto;
+  }
+}
